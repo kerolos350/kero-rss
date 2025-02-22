@@ -1,0 +1,9 @@
+My Custom Plugin - Proprietary License
+
+Copyright (C) 2025 Kerolos Emad
+
+This software is proprietary and may not be used, copied, modified, distributed, sublicensed, or sold without explicit written permission from the author.
+
+Unauthorized use, modification, distribution, or resale of this software is strictly prohibited.
+
+For licensing inquiries, please contact kerolos.emad.work@gmail.com.

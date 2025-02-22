@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --font: "Nunito", serif;;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 0px;
+    margin: 0;
+    font-family: var(--font);
+}
+
+.container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    width: calc(100%);
+    position: relative;
+    left: -20px;
+    top: -20px;
+    background-color: #1d3557;
+    padding: 30px 20px;
+    color: #ffffff;
+    margin: 20px 0px 20px 0px;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-container, .imported-feeds{
+    min-width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.014) inset;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.sub-container form {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    min-width: calc(70% - 20px);
+    max-width: calc(70% - 20px);
+}
+
+.feed-table th, .feed-table td {
+    font-size: 20px !important;
+    vertical-align: middle;
+}
+
+.feed-table tbody {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.feed-table th {
+    text-align: justify;
+    width: 150px;
+}
+
+.feed-table td {
+    vertical-align: middle;
+    width: 80%;
+}
+
+.sub-container form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 1px solid #1d355769;
+    margin-bottom: 0px;
+    font-size: 20px !important;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.sub-container form input[type="text"]:focus {
+    outline: 1px solid #2c538a;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.sub-container form input[type="checkbox"] {
+    padding: 10px;
+    border: none;
+    border: 1px solid #1d355769;
+    margin-bottom: 0px;
+    font-size: 20px !important;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    align-self: start;
+}
+
+.sub-container form input[type="checkbox"]:focus {
+    outline: 1px solid #2c538a;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.sub-container form select {
+    padding: 10px;
+    border: none;
+    border: 1px solid #1d355769;
+    margin-bottom: 0px;
+    font-size: 20px !important;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    align-self: start;
+}
+
+.sub-container form select:focus {
+    outline: 1px solid #2c538a;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.sub-container p input[type="submit"] {
+    padding: 15px 20px;
+    border: none;
+    background-color: #1d3557;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.check-url {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-url a {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    top: -65px;
+}
+
+.check-url svg {
+    width: 20px;
+    stroke-width: 2px;
+    stroke: #1d3557;
+}
+
+.imported-feeds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    min-width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    margin-top: 20px;
+}
+
+.imported-feeds h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: calc(100% + 40px);
+    background-color: #1d3557;
+    padding: 20px;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+}
+
+.imported-feeds .wp-list-table {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #dadcdf;
+}
+
+.imported-feeds .wp-list-table .manage-column:nth-child(1),
+.imported-feeds .wp-list-table .manage-column:nth-child(2),
+.imported-feeds .wp-list-table .manage-column:nth-child(4),
+.imported-feeds .wp-list-table .manage-column:nth-child(5) {
+    width: 15%;
+}
+
+.imported-feeds .wp-list-table .manage-column:nth-child(3) {
+    width: 30%;
+}
+
+.fetch-feed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.fetch-feed input[type="submit"],
+.fetch-all input[type="submit"] {
+    padding: 6px;
+    border: none;
+    background-color: #1d3557;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    width: 70px;
+    min-width: 60px;
+    margin-left: 0;
+}
+
+.fetch-feed input[type="submit"]:hover,
+.fetch-all input[type="submit"]:hover,
+.sub-container p input[type="submit"]:hover {
+    background-color: #135e96;
+    color: #ffffff;
+}
+
+.fetch-all {
+    margin: 20px 0;
+    width: fit-content;
+}
+
+.fetch-all input[type="submit"] {
+    padding: 6px 20px;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 0;
+    width: fit-content;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-container form {
+    width: calc(100% - 40px);
+    min-width: calc(100% - 20px);
+}
+
+.settings-container form th {
+    width: 280px;
+}
+
+.settings-container form td {
+    width: calc(100% - 280px);
+}
+
+@media screen and (max-width: 550px) {
+
+    .feed-table tbody tr {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .check-url a {
+        margin-left: 0;
+    }
+
+    .imported-feeds .wp-list-table .manage-column:nth-child(1) {
+        width: 30%;
+    }
+
+    .imported-feeds .wp-list-table .manage-column:nth-child(2),
+    .imported-feeds .wp-list-table .manage-column:nth-child(3),
+    .imported-feeds .wp-list-table .manage-column:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    
+    .container h1 {
+        left: -20px;
+    }
+
+    .feed-table th, .feed-table td {
+        min-width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    
+    .sub-container {
+        flex-direction: column;
+    }
+    .sub-container form {
+        min-width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
+
+    .check-url a {
+        top: 0;
+    }
+}
