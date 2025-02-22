@@ -3,13 +3,13 @@
 /**
  * 
  * Plugin Name: Kero RSS
- * Plugin URI: https://example.com
+ * Plugin URI: https://github.com/kerolos350/kero-rss
  * Description: Kero RSS is a simple plugin that allows you to import RSS feeds and display them as posts on your WordPress site. And it also allows you to scrape the content of the feed items and display them as posts content.
  * Version: 1.0
  * Author: Kerolos Emad
- * Author URI: https://example.com
+ * Author URI: https://github.com/kerolos350
  * License: Proprietary
- * License URI: https://example.com/license
+ * License URI: https://github.com/kerolos350/kero-rss/blob/kero-rss/License.txt
  * 
  */
 
