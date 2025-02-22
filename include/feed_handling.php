@@ -40,8 +40,8 @@ if (isset($_POST['fetch_feed'])) {
         echo "An error occurred while processing the RSS feed.";
     }
 
-    // wp_redirect(admin_url('admin.php?page=kero-rss-import'));
-    // exit;
+    wp_redirect(admin_url('admin.php?page=kero-rss-import'));
+    exit;
 }
 
 if (isset($_POST['import_all_feeds'])) {
