@@ -380,6 +380,8 @@ function check_post_exists_by_title($title) {
                     }
           
                     $processed++;
+             } else {
+               exit('Post with this title exist');
              }
 
          }
